@@ -7,87 +7,39 @@ import { PreviewDesktopImg, PreviewMobileImg, StarImg } from "../assets";
 // Components
 import Footer from "../components/layouts/Footer";
 import Linebreak from "../components/Linebreak";
+import Wysiwyg from "../components/Wysiwyg";
+    
 
 export default function Landing() {
 
     useEffect(() => {
         document.title = "OPartage - Acceuil";
-        
     }, [])
 
     return (
-        <div className="container m-auto px-8">
-            <div className="my-20">
-                <h1 className="text-7xl font-bold font-title -tracking-tigh text-slate-400 md:text-center">
-                    Avec le moins de dispute
+        <div className="">
+            <div className="mt-20">
+                <h1 className=" text-5xl font-title text-slate-800 md:text-center">
+                    Discuter, pas disputer
                 </h1>
-                <p className="md:w-2/3 mx-auto my-6 text-lg">
-                    OPartage est un réseau social fait pour partager des idées
-                    et cultures, non pas pour se battre à convaincre les autres
-                    que la sienne est la bonne
-                </p>
-                <div className="text-center my-10 text-base">
-                    <Link
-                        to="login"
-                        className="m-2 bg-slate-600 relative
-                         p-2 after:content-[' '] after:absolute after:w-full
-                        after:top-0 after:left-0 after:h-full after:translate-x-1
-                        after:translate-y-1 after:bg-slate-400 after:z-[-1]
-                        after:transition-transform after:duration-500
-                        after:hover:translate-x-0 after:hover:translate-y-0 text-white"
-                    >
-                        Se connecter
-                    </Link>
-                    <Link
-                        to="register"
-                        className="m-2 bg-slate-600 relative
-                         p-2 after:content-[' '] after:absolute after:w-full
-                        after:top-0 after:left-0 after:h-full after:translate-x-1
-                        after:translate-y-1 after:bg-slate-400 after:z-[-1]
-                        after:transition-transform after:duration-500
-                        after:hover:translate-x-0 after:hover:translate-y-0 text-white"
-                    >
-                        S'inscrire
-                    </Link>
+                <div className="md:w-2/3 mx-auto my-6 text-lg">
+                    <p>
+                        <span className="text-slate-500 mr-1">C'est ça l'idée !</span>
+                        Un réseau social pour partager des idées
+                        et cultures, non pas pour se battre à convaincre les autres
+                        que la sienne est la bonne
+                    </p>
                 </div>
             </div>
             <Linebreak />
-            <div className="grid lg:grid-cols-2 md:gap-20 items-center justify-between md:mx-12 text-lg">
-                <div className="md:p-12">
-                    <div className="relative">
-                        <h1 className="text-5xl font-title font-extrabold text-center md:text-justify">
-                            Contenu riche en style
-                        </h1>
-                        <p className="my-6">
-                            OPartage utilise un éditeur de texte riche en
-                            fonctionnalité pour vous permettre de styliser le
-                            contenu de votre publication. En plus des contenus
-                            mutlimedias tels que des images, vidéos...
-                        </p>
-                        <div className="absolute translate-x-2/3">
-                            <div className="w-10 h-100">
-                                <img src={StarImg} alt="etoile" />
-                            </div>
-                        </div>
-                    </div>
+            <div className="px-20 grid grid-cols-2 gap-20 my-10">
+                <div className="">
+                    <h1 className="font-title text-4xl mb-6">Appyue sur tes mots</h1>
+                    <Wysiwyg demo />
                 </div>
-                <div className="md:p-12">
-                    <div className="shadow-xl w-full">
-                        <img src={PreviewMobileImg} alt="mobile view" className="cover"/>
-                    </div>
-                </div>
-            </div>
-
-            <div className="grid lg:grid-cols-2 md:gap-20 items-center justify-between md:my-12 text-lg">
-                <div className="md:p-12 order-2">
-                    <div className="shadow-xl">
-                        <img src={PreviewDesktopImg} alt="mobile view" />
-                    </div>
-                </div>
-                <div className="md:p-12 order-1 lg:order-2 my-20">
-                    <div className="relative">
-                        <h1 className="text-5xl font-title font-extrabold text-center md:text-justify">
-                            Le tout et rien
+                <div className="relative">
+                        <h1 className="text-4xl font-title text-center md:text-start">
+                            Balance tout d'une seule fois
                         </h1>
                         <p className="my-6">
                             Un utilisateur n'est autorise à ne faire qu'une
@@ -100,9 +52,17 @@ export default function Landing() {
                             </div>
                         </div>
                     </div>
-                </div>
             </div>
-            <Linebreak />
+            <div className="flex justify-center items-center my-10 ">
+                <div className="border-2 border-slate-800">
+                    <div className="border-2 border-white hover:bg-white hover:text-black transition duration-500 bg-slate-800 text-white">
+                       <button className="p-2">
+                            Tester l'application
+                        </button>  
+                    </div>
+                </div>
+
+            </div>
             <Footer />
         </div>
     );

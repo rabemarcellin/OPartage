@@ -15,6 +15,12 @@
 
 @layer base {
   body {
-    @apply font-text bg-slate-50;
+    font-family: 'Lora', sans-serif;
+    font-size: 20px;
   }
+}
+
+.bg-gradient {
+  background: rgb(34,193,195);
+  background: linear-gradient(90deg, rgba(34,193,195,1) 0%, rgba(216,241,145,1) 100%);
 }

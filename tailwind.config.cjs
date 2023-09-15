@@ -7,9 +7,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        text: '"Inter"',
-        title: '"Open Sans"',
-    },
+        title: ['"Lexend"', 'sans-serif']
+      },
     },
   },
   plugins: [],

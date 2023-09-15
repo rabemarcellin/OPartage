@@ -14,8 +14,8 @@ library.add(fas, fab);
 
 function App() {
     const navigation = useLocation();
-    const path = navigation.pathname.substring(1).toLowerCase();
-    const notInAuth = path !== "social-network-landing-page/login" && path !== "social-network-landing-page/register";
+    const path = navigation.pathname
+    const notInAuth = !(path.includes("/login") || path.includes("/register"))
 
     return (
         <div aria-label="app">

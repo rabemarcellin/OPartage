@@ -7,7 +7,7 @@ import * as Page from "./pages";
 
 const routes = [
     {
-        path: "/react-page-template/",
+        path: "/",
         element: <App />,
         errorElement: <Page.ErrorPage />,
         children: [

@@ -23,8 +23,8 @@ export default function ErrorPage() {
                                 </div>
                                 <div className="flex justify-center lg:justify-start">
                                     <Link
-                                        to="/social-network-landing-page/"
-                                        className="bg-slate-600 relativefont-bold p-2 
+                                        to="/"
+                                        className="bg-slate-600 relative  p-2 
                                             after:content-[' '] after:absolute after:w-full
                                             after:top-0 after:left-0 after:h-full after:translate-x-1
                                             after:translate-y-1 after:bg-slate-400 after:z-[-1]

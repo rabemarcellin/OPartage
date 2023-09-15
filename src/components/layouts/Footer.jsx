@@ -2,11 +2,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Footer() {
     return (
-        <div id="footer">
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
+        <div id="footer" className="bg-slate-100 p-20">
+            <div className="lg:grid grid-cols-2 gap-6">
                 <div>
-                    <h1 className="font-bold">Contact</h1>
-                    <ul className="text-sm">
+                    <h1 className="font-title">Contact</h1>
+                    <ul className="text-s">
                         <li className="my-2">
                             <span className="mr-2">
                                 <FontAwesomeIcon
@@ -22,7 +22,7 @@ export default function Footer() {
                             <span className="mr-2">
                                 <FontAwesomeIcon icon={["fas", "phone"]} />
                             </span>
-                            <span> +261 34 93 946 98</span>
+                            <span> +261 38 77 051 95</span>
                         </li>
                         <li className="my-2">
                             <span className="mr-2">
@@ -48,8 +48,8 @@ export default function Footer() {
                     </ul>
                 </div>
                 <div>
-                    <h1 className="font-bold">A propos</h1>
-                    <ul className="text-sm">
+                    <h1 className="font-title">A propos</h1>
+                    <ul className="">
                         <li className="my-2">
                             <span>Nous contacter</span>
                         </li>
@@ -65,11 +65,12 @@ export default function Footer() {
                             <span> Besoin d'aide ?</span>
                         </li>
                     </ul>
+                    <div className="text-gray-500 font-title">
+                        <span>Copyright (©) 2023 - RABE Marcellin</span>
+                    </div>
                 </div>
             </div>
-            <div className="text-center text-sm text-gray-400 mt-20 pb-4">
-                <span>Copyright (©) 2023 - RABE Marcellin</span>
-            </div>
+            
         </div>
     );
 }
