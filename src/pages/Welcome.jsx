@@ -19,7 +19,7 @@ export default function Landing() {
     return (
         <div className="">
             <div className="mt-8 px-4 md:px-0">
-                <h1 className=" text-5xl font-title text-slate-800 text-center">
+                <h1 className="text-4xl lg:text-5xl font-title text-slate-800 text-center">
                     Discuter, pas disputer
                 </h1>
                 <div className="m-6">
@@ -35,13 +35,13 @@ export default function Landing() {
             <div className="px-4 lg:px-20 lg:grid grid-cols-2 gap-20 my-10">
                 <div className="mb-8 lg:mb-0">
                     <div className="flex flex-col items-center">
-                        <h1 className="font-title text-4xl mb-6">Appyue sur tes mots</h1>
+                        <h1 className="font-title text-3xl lg:text-4xl mb-6">Appyue sur tes mots</h1>
                         <Wysiwyg demo />
                     </div>
                     
                 </div>
                 <div className="relative mb-8 md:mb-0 text-center lg:text-start">
-                        <h1 className="text-4xl font-title">
+                        <h1 className="text-3xl lg:text-4xl font-title">
                             Balance tout d'une seule fois
                         </h1>
                         <p className="my-6">

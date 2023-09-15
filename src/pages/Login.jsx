@@ -41,6 +41,7 @@ export default function Login() {
                                             type="password"
                                             className="w-full border rounded-md p-2"
                                             placeholder="****"
+                                            autocomplete="current-password"
                                         />
                                     </div>
                                 </div>
