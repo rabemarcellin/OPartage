@@ -45,7 +45,7 @@ export default function Landing() {
                             Balance tout d'une seule fois
                         </h1>
                         <p className="my-6">
-                            Un utilisateur n'est autorise à ne faire qu'une
+                            Un utilisateur n'est autorisé qu'à un
                             commentaire sur une publication. Adieu l'occasion
                             des petites querelles
                         </p>
