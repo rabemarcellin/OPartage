@@ -22,7 +22,7 @@ export default function Landing() {
                 <h1 className=" text-5xl font-title text-slate-800 md:text-center">
                     Discuter, pas disputer
                 </h1>
-                <div className="md:w-2/3 mx-auto my-6 text-lg">
+                <div className="md:w-2/3 mx-auto my-6">
                     <p>
                         <span className="text-slate-500 mr-1">C'est ça l'idée !</span>
                         Un réseau social pour partager des idées
