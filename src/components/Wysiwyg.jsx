@@ -30,15 +30,22 @@ export default function Wysiwyg(demo) {
     <div className="h-[300px] max-w-[500px] w-full">
         <div className="flex flex-col h-full p-2">
         <div classname="flex-none">
-                <div className='flex bg-gradient border-2 border-slate-500 rounded'>
+                <div className='flex flex-wrap bg-gradient border-2 border-slate-500 rounded'>
                     {
                         options.map(option => (
-                            <div className="flex flex-wrap divide-x divide-black gap-2 border-black rounded-xl font-thin p-2">
+                            <div className="flex  flex-nowrap divide-x divide-black gap-2 border-black rounded-xl font-thin p-2">
                                 {
                                     option.map((Icon, index) => (
-                                        <button className='active:scale-95 hover:text-gray-500 text-center'>
-                                            <Icon key={index} className='ml-2' />
-                                        </button>
+                                        index !== 2 ? (
+                                            <button className='active:scale-95 hover:text-gray-500 text-center'>
+                                                <Icon key={index} className='ml-2' />
+                                            </button>
+                                        ):(
+                                            <button className='hidden md:block active:scale-95 hover:text-gray-500 text-center'>
+                                                <Icon key={index} className='ml-2' />
+                                            </button>
+                                        )
+                                       
                                     ))
                                 }
                             </div>

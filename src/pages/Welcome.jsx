@@ -18,11 +18,11 @@ export default function Landing() {
 
     return (
         <div className="">
-            <div className="mt-20">
-                <h1 className=" text-5xl font-title text-slate-800 md:text-center">
+            <div className="mt-8 px-4 md:px-0">
+                <h1 className=" text-5xl font-title text-slate-800 text-center">
                     Discuter, pas disputer
                 </h1>
-                <div className="md:w-2/3 mx-auto my-6">
+                <div className="m-6">
                     <p>
                         <span className="text-slate-500 mr-1">C'est ça l'idée !</span>
                         Un réseau social pour partager des idées
@@ -32,13 +32,16 @@ export default function Landing() {
                 </div>
             </div>
             <Linebreak />
-            <div className="px-20 grid grid-cols-2 gap-20 my-10">
-                <div className="">
-                    <h1 className="font-title text-4xl mb-6">Appyue sur tes mots</h1>
-                    <Wysiwyg demo />
+            <div className="px-4 lg:px-20 lg:grid grid-cols-2 gap-20 my-10">
+                <div className="mb-8 lg:mb-0">
+                    <div className="flex flex-col items-center">
+                        <h1 className="font-title text-4xl mb-6">Appyue sur tes mots</h1>
+                        <Wysiwyg demo />
+                    </div>
+                    
                 </div>
-                <div className="relative">
-                        <h1 className="text-4xl font-title text-center md:text-start">
+                <div className="relative mb-8 md:mb-0 text-center lg:text-start">
+                        <h1 className="text-4xl font-title">
                             Balance tout d'une seule fois
                         </h1>
                         <p className="my-6">

@@ -16,7 +16,7 @@
 @layer base {
   body {
     font-family: 'Lora', sans-serif;
-    font-size: 20px;
+    @apply text-base lg:text-lg;
   }
 }
 

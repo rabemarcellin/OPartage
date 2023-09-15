@@ -3,7 +3,7 @@ import LogoImg from  "../../assets/img/logo.png";
 
 export default function Navbar() {
     return (
-        <div className="py-6">
+        <div className="px-4 md:px-0 py-6">
             <div className="border-2 border-slate-800 rounded-full md:w-3/4 md:m-auto">
             <div className="shadow-lg border-2 border- bg-slate-800 text-white rounded-full p-2">
                 <nav className="flex justify-between items-center p-2">
