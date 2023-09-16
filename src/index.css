@@ -20,6 +20,12 @@
   }
 }
 
+@layer utilities {
+  div[data-type="slate-editor"] div[role="textbox"] {
+    @apply outline-none;
+  }
+}
+
 .bg-gradient {
   background: rgb(34,193,195);
   background: linear-gradient(90deg, rgba(34,193,195,1) 0%, rgba(216,241,145,1) 100%);
